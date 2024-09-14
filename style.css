@@ -1,0 +1,327 @@
+*{ 
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+
+}
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.6rem; ;
+}
+.sidebar{
+    background-color:#121212;
+    width: 340px;
+    border-radius: 1rem;  /* 16px*/
+    margin-right: 0.5rem;
+
+}
+.main-content{
+    
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    background-color:#000;
+    padding: 0 1.5rem 0 1.5rem;
+
+}
+.music-player{
+    
+    
+    bottom: 0px;
+    width: 100%;
+    height: 80px;
+    left: 0;
+    display: flex;
+    position: fixed;
+    
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.nav{
+    background-color:#121212;
+    border-radius: 1rem;
+    display: flex;
+    height: 100px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 0.75rem;
+
+}
+.nav-option{
+    height: 2.5rem;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+
+}
+.nav-option i{
+    font-size: 1.25rem;
+    background-color:#232323;
+}
+.nav-option a{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+.nav-option:hover{
+    height: 2.5rem;
+    opacity: 1;
+
+}
+.library{
+ 
+    
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: .2rem;
+    padding: 0.5rem 0.75rem;
+    width: 19.5rem;
+
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+}
+.lib-option img{
+    width: 1.25rem;
+    height: 1.25rem;
+
+}
+.icons{
+    font-size: 1.25rem;
+    opacity: 0.7;
+    margin-right: 1rem;
+    display: flex;
+    margin-top: 1rem;
+
+}
+.icons i {
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+.icons i:hover{
+    opacity: 1;
+}
+.box{
+    background-color: #232323;
+    height: 8rem;
+    border-radius: 1rem;
+    margin:0.75rem 0 1.75rem 0;
+    padding: 1rem 1.25rem;
+
+   
+}
+.box-p1{
+    font-size: 0.8rem;
+    background-color: #232323;
+    font-weight: 700;
+    margin-top: 0.6rem;
+}
+.box-p2{
+    font-size: 0.75rem;
+    opacity: 0.9;
+    background-color: #232323;
+    margin-top: 1rem;
+
+}
+.badge{
+    background-color: white;
+    color:#232323;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 650;
+    margin-top: 1.5rem;
+    height: 2rem;
+    width: fit-content;
+
+}
+.sticky-nav img{
+    width: 2rem;
+    margin-left: 0.75rem;
+    height: 2rem;
+}
+.sticky-nav{
+    position: sticky;
+    top: 0;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index: 10;
+}
+
+.sticky-nav-options {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.75rem;
+}
+.badge1{
+    background-color: white;
+    color:#232323;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 650;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: fit-content;
+    justify-content: space-evenly;
+    margin-right: 1.5rem;
+
+}
+.sticky-nav-options button{
+    margin-right: 2rem;
+}
+.dark{
+    background-color: #000;
+    color: white;
+}
+@media(max-width:1000px){
+    .farward{
+        display: none;
+    }
+}.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem; /* Adds spacing between cards */
+}
+
+.card {
+    background-color: #232323;
+    flex: 1 1 150px; /* Allows flexibility and wrapping */
+    border-radius: 0.5rem;
+    padding: 1rem;
+    max-width: 200px; /* Ensures cards do not stretch too far */
+}
+.card-img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.card-title{
+    font-weight: 600;
+}
+.card-info{
+    font-size: 0.85rem;
+    opacity: 0.8;
+    
+}
+.footer{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.1rem;
+    margin-top: 1rem;
+
+}
+.line{
+    width: 90%;
+  
+    border: 1px solid white;
+    opacity: 0.1rem;
+}
+.first img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 0.5rem;
+
+
+}
+.first h3{
+    margin-top: -3rem;
+    margin-left: 6rem;
+    font-size: 20;
+    font-weight: 100;
+
+    
+
+}
+.first  p{
+    font-size: 1rem;
+    margin-top: -3rem;
+    margin-left: 6rem;
+}
+
+.first div{
+    margin-left: 15rem;
+}
+.share{
+    margin-left: 3rem;
+}
+.third{
+    width: 18rem;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    justify-content: space-around;
+    margin-left: -4rem;
+}
+.two{
+    display: grid;
+    flex: 1;
+    margin-left: 2rem;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: -2rem;
+   
+   
+
+}
+.two div{
+
+}
+.volume{
+    width: 6rem;
+}
+.name{
+    font-size: 2rem;
+}
+.name2{
+    font-size: 15px;
+}
+.two i{
+
+    padding: 3rem;
+    opacity: 0.5;
+    background-color: rgba(38, 19, 19, 0.177);
+    width: rem;
+    height: 1rem;
+}
+.progres-bar{
+    width: 30rem;
+    height: 1rem;
+    font-size: 0.4rem;
+    font-weight: 100;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: -1rem;
+}
+.two i:hover{
+    opacity: 1;
+    
+}
+.first{
+    margin-left: 2rem;
+}
+.progres-bar::-webkit-slider-runnable-track{
+   background-color: white;
+    border-radius: 100px;
+    height: 0.25rem;
+}
+.progres-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+}
